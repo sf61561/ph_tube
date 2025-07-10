@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>PH Tube</title>
+</head>
+<body>
+    <header>
+        <nav class="flex h-[80px] items-center justify-between mx-1 px-10 border-0 rounded-xl shadow-[2px_2px_3px_#aba9a9]">
+            <img class="w-[8%]" src="images/Logo.png">
+            <label class="input">
+                <input type="search" required placeholder="Search" id="search"/>
+                <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke="currentColor"
+                    >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                    </g>
+                </svg>
+            </label>
+            <button class="btn btn-outline">Sort</button>
+        </nav>
+        <div id="category" class=" flex mt-5 justify-center">
+            <button id="all" class="btn px-5 py-2 bg-[#d9d9d9] rounded-md hover:text-white hover:bg-[rgb(255,31,61)]">All</button>
+        </div>
+    </header>
+    <main id="videos-container" class=""></main>
+    <dialog id="custom_modal" class="modal">
+        <div class="modal-box">
+            <div id="modal-content">
+            </div>
+            <div class="modal-action">
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+            </form>
+            </div>
+        </div>
+    </dialog>
+    <script src="js/api.js"></script>
+</body>
+</html>
