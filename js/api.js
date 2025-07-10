@@ -1,7 +1,7 @@
 function no_video(){
     const main=document.getElementById('videos-container');
     main.classList.remove('grid');
-    main.innerHTML = `  <div class="flex flex-col items-center justify-center h-[350px] w-[100vw]">
+    main.innerHTML = `  <div class="flex flex-col items-center justify-center h-[350px] w-[99vw]">
                             <img src="images/Icon.png">
                             <p class="font-bold text-4xl mt-3 text-center">Oops!!<br>Sorry,There is no content here</p>
                         </div>
